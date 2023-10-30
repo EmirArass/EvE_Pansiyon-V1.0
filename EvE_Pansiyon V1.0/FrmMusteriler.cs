@@ -208,6 +208,11 @@ namespace EvE_Pansiyon_V1._0
             }
             baglanti.Close();
         }
+
+        private void FrmMusteriler_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 // Data Source=DESKTOP-LCVI7NA\\SQLEXPRESS;Initial Catalog=EvePansiyon;Integrated Security=True

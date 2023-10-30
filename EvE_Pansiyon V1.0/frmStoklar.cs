@@ -33,6 +33,23 @@ namespace EvE_Pansiyon_V1._0
             Baglanti.Close();
         }
 
+        private void veriler2()
+        {
+            listView2.Items.Clear();
+            Baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("Select * From Faturalar", Baglanti);
+            SqlDataReader oku2 = komut2.ExecuteReader();
+            while (oku2.Read())
+            {
+                ListViewItem ekle = new ListViewItem();
+                ekle.Text = oku2["Elektrik"].ToString();
+                ekle.SubItems.Add(oku2["Su"].ToString());
+                ekle.SubItems.Add(oku2["İnternet"].ToString());
+                listView2.Items.Add(ekle);
+            }
+            Baglanti.Close();
+        }
+
         public frmStoklar()
         {
             InitializeComponent();
@@ -51,6 +68,17 @@ namespace EvE_Pansiyon_V1._0
         private void frmStoklar_Load(object sender, EventArgs e)
         {
             veriler();
+            veriler2();
+        }
+
+        private void BtnKaydet2_Click(object sender, EventArgs e)
+        {
+            listView2.Items.Clear();
+            Baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("insert into Faturalar (Elektrik, Su, İnternet) values ('" + txtElektrik.Text + "','" + txtSu.Text + "','" + txtDogalgaz.Text + "')", Baglanti);
+            komut2.ExecuteNonQuery();
+            Baglanti.Close();
+            veriler2    ();
         }
     }
 }

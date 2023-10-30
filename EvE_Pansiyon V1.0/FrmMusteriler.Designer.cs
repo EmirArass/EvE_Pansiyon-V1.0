@@ -428,6 +428,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmMusteriler";
             this.Text = "Müşteri Bilgileri";
+            this.Load += new System.EventHandler(this.FrmMusteriler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

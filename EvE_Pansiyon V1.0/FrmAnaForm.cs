@@ -71,7 +71,32 @@ namespace EvE_Pansiyon_V1._0
 
         private void button5_Click(object sender, EventArgs e)
         {
+            FrmGelirGider fr = new FrmGelirGider();
+            fr.Show();
+        }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FrmRadio frm = new FrmRadio();
+            frm.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            FrmGazeteler fr = new FrmGazeteler();
+            fr.Show();
+        }
+
+        private void BtnSifreGuncelle_Click(object sender, EventArgs e)
+        {
+            FrmSifreGuncelle1 fr = new FrmSifreGuncelle1();
+            fr.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmMesajlar fr = new FrmMesajlar();
+            fr.Show();
         }
     }
 }

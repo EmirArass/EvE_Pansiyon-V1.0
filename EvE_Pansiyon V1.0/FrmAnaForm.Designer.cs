@@ -41,7 +41,7 @@
             this.lblsaat = new System.Windows.Forms.Label();
             this.lbltarih = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button10 = new System.Windows.Forms.Button();
+            this.BtnSifreGuncelle = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -114,7 +114,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(90, 47);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Stoklar";
+            this.button6.Text = "Giderler";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -128,6 +128,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Müşteri Mesajları";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -139,6 +140,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Müzik Dinle";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -180,16 +182,17 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button10
+            // BtnSifreGuncelle
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(12, 85);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(90, 47);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Hava Durumu";
-            this.button10.UseVisualStyleBackColor = false;
+            this.BtnSifreGuncelle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnSifreGuncelle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnSifreGuncelle.Location = new System.Drawing.Point(12, 85);
+            this.BtnSifreGuncelle.Name = "BtnSifreGuncelle";
+            this.BtnSifreGuncelle.Size = new System.Drawing.Size(90, 47);
+            this.BtnSifreGuncelle.TabIndex = 11;
+            this.BtnSifreGuncelle.Text = "Şifre Güncelle";
+            this.BtnSifreGuncelle.UseVisualStyleBackColor = false;
+            this.BtnSifreGuncelle.Click += new System.EventHandler(this.BtnSifreGuncelle_Click);
             // 
             // button11
             // 
@@ -201,6 +204,7 @@
             this.button11.TabIndex = 12;
             this.button11.Text = "Gazeteler";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -222,7 +226,7 @@
             this.ClientSize = new System.Drawing.Size(1086, 583);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.BtnSifreGuncelle);
             this.Controls.Add(this.lbltarih);
             this.Controls.Add(this.lblsaat);
             this.Controls.Add(this.button9);
@@ -256,7 +260,7 @@
         private System.Windows.Forms.Label lblsaat;
         private System.Windows.Forms.Label lbltarih;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button BtnSifreGuncelle;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
     }

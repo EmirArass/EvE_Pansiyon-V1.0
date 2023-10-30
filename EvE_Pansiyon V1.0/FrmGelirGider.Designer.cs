@@ -35,7 +35,7 @@
             this.lblurun = new System.Windows.Forms.Label();
             this.lblyiyecek = new System.Windows.Forms.Label();
             this.lblfatura = new System.Windows.Forms.Label();
-            this.lblfaturatutar = new System.Windows.Forms.Label();
+            this.lblelektrik = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblgelir = new System.Windows.Forms.Label();
@@ -44,6 +44,8 @@
             this.btnHesapla = new System.Windows.Forms.Button();
             this.lblicecek = new System.Windows.Forms.Label();
             this.lblatistirmalik = new System.Windows.Forms.Label();
+            this.lblsu = new System.Windows.Forms.Label();
+            this.lbldogalgaz = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblanapara
@@ -60,6 +62,7 @@
             // 
             this.lblanaparatutar.AutoSize = true;
             this.lblanaparatutar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblanaparatutar.ForeColor = System.Drawing.Color.DarkRed;
             this.lblanaparatutar.Location = new System.Drawing.Point(210, 22);
             this.lblanaparatutar.Name = "lblanaparatutar";
             this.lblanaparatutar.Size = new System.Drawing.Size(34, 23);
@@ -80,6 +83,7 @@
             // 
             this.lblpersonelptutar.AutoSize = true;
             this.lblpersonelptutar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpersonelptutar.ForeColor = System.Drawing.Color.DarkRed;
             this.lblpersonelptutar.Location = new System.Drawing.Point(210, 62);
             this.lblpersonelptutar.Name = "lblpersonelptutar";
             this.lblpersonelptutar.Size = new System.Drawing.Size(34, 23);
@@ -100,6 +104,7 @@
             // 
             this.lblyiyecek.AutoSize = true;
             this.lblyiyecek.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblyiyecek.ForeColor = System.Drawing.Color.DarkRed;
             this.lblyiyecek.Location = new System.Drawing.Point(210, 100);
             this.lblyiyecek.Name = "lblyiyecek";
             this.lblyiyecek.Size = new System.Drawing.Size(34, 23);
@@ -116,15 +121,16 @@
             this.lblfatura.TabIndex = 6;
             this.lblfatura.Text = "Faturalar:";
             // 
-            // lblfaturatutar
+            // lblelektrik
             // 
-            this.lblfaturatutar.AutoSize = true;
-            this.lblfaturatutar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfaturatutar.Location = new System.Drawing.Point(210, 141);
-            this.lblfaturatutar.Name = "lblfaturatutar";
-            this.lblfaturatutar.Size = new System.Drawing.Size(34, 23);
-            this.lblfaturatutar.TabIndex = 7;
-            this.lblfaturatutar.Text = "00";
+            this.lblelektrik.AutoSize = true;
+            this.lblelektrik.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblelektrik.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblelektrik.Location = new System.Drawing.Point(210, 141);
+            this.lblelektrik.Name = "lblelektrik";
+            this.lblelektrik.Size = new System.Drawing.Size(34, 23);
+            this.lblelektrik.TabIndex = 7;
+            this.lblelektrik.Text = "00";
             // 
             // label1
             // 
@@ -149,6 +155,7 @@
             // 
             this.lblgelir.AutoSize = true;
             this.lblgelir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgelir.ForeColor = System.Drawing.Color.DarkRed;
             this.lblgelir.Location = new System.Drawing.Point(133, 396);
             this.lblgelir.Name = "lblgelir";
             this.lblgelir.Size = new System.Drawing.Size(34, 23);
@@ -191,6 +198,7 @@
             // 
             this.lblicecek.AutoSize = true;
             this.lblicecek.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblicecek.ForeColor = System.Drawing.Color.DarkRed;
             this.lblicecek.Location = new System.Drawing.Point(260, 100);
             this.lblicecek.Name = "lblicecek";
             this.lblicecek.Size = new System.Drawing.Size(34, 23);
@@ -201,11 +209,34 @@
             // 
             this.lblatistirmalik.AutoSize = true;
             this.lblatistirmalik.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblatistirmalik.ForeColor = System.Drawing.Color.DarkRed;
             this.lblatistirmalik.Location = new System.Drawing.Point(310, 100);
             this.lblatistirmalik.Name = "lblatistirmalik";
             this.lblatistirmalik.Size = new System.Drawing.Size(34, 23);
             this.lblatistirmalik.TabIndex = 15;
             this.lblatistirmalik.Text = "00";
+            // 
+            // lblsu
+            // 
+            this.lblsu.AutoSize = true;
+            this.lblsu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsu.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblsu.Location = new System.Drawing.Point(260, 141);
+            this.lblsu.Name = "lblsu";
+            this.lblsu.Size = new System.Drawing.Size(34, 23);
+            this.lblsu.TabIndex = 16;
+            this.lblsu.Text = "00";
+            // 
+            // lbldogalgaz
+            // 
+            this.lbldogalgaz.AutoSize = true;
+            this.lbldogalgaz.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldogalgaz.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbldogalgaz.Location = new System.Drawing.Point(310, 141);
+            this.lbldogalgaz.Name = "lbldogalgaz";
+            this.lbldogalgaz.Size = new System.Drawing.Size(34, 23);
+            this.lbldogalgaz.TabIndex = 17;
+            this.lbldogalgaz.Text = "00";
             // 
             // FrmGelirGider
             // 
@@ -214,6 +245,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbldogalgaz);
+            this.Controls.Add(this.lblsu);
             this.Controls.Add(this.lblatistirmalik);
             this.Controls.Add(this.lblicecek);
             this.Controls.Add(this.btnHesapla);
@@ -222,7 +255,7 @@
             this.Controls.Add(this.lblsonuc);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblfaturatutar);
+            this.Controls.Add(this.lblelektrik);
             this.Controls.Add(this.lblfatura);
             this.Controls.Add(this.lblyiyecek);
             this.Controls.Add(this.lblurun);
@@ -233,7 +266,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmGelirGider";
-            this.Text = "FrmGelirGider";
+            this.Text = "Gelir Gider";
             this.Load += new System.EventHandler(this.FrmGelirGider_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,7 +282,7 @@
         private System.Windows.Forms.Label lblurun;
         private System.Windows.Forms.Label lblyiyecek;
         private System.Windows.Forms.Label lblfatura;
-        private System.Windows.Forms.Label lblfaturatutar;
+        private System.Windows.Forms.Label lblelektrik;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblgelir;
@@ -258,5 +291,7 @@
         private System.Windows.Forms.Button btnHesapla;
         private System.Windows.Forms.Label lblicecek;
         private System.Windows.Forms.Label lblatistirmalik;
+        private System.Windows.Forms.Label lblsu;
+        private System.Windows.Forms.Label lbldogalgaz;
     }
 }

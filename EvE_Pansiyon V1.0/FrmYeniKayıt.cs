@@ -272,7 +272,7 @@ namespace EvE_Pansiyon_V1._0
 
             label11.Text = sonuC.TotalDays.ToString();
 
-            ucret = Convert.ToInt32(label11.Text) * 50;
+            ucret = Convert.ToInt32(label11.Text) * 300;
             MskTxtUcret.Text = ucret.ToString();
         }
 
@@ -293,6 +293,11 @@ namespace EvE_Pansiyon_V1._0
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

@@ -16,7 +16,7 @@ namespace EvE_Pansiyon_V1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGelirGider());
+            Application.Run(new FrmAdminGiris());
         }
     }
 }
